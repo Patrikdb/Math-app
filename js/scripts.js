@@ -1,4 +1,3 @@
-
 var question = document.getElementById('question');
 function getQStart(){
   num1 = Math.floor(Math.random()*100);
@@ -46,6 +45,7 @@ var lives = document.getElementById('lives');
 lives = 5;
 var playagain = document.getElementById('playagain');
 $('#playagain').hide();
+$('#postscore').hide();
 
 
 
@@ -64,6 +64,7 @@ $(document).keypress(
   function submit(){
     var answer = document.getElementById('answer').value;
       if(answer == sum){
+
           // CORRENT ANSWER
           score++;
           document.getElementById("score").innerHTML = "SCORE: " + score;
@@ -75,16 +76,20 @@ $(document).keypress(
         getQ();
       } else {
 
-          // WRONG ANSWER
-          lives--;
-          document.getElementById("lives").innerHTML = "LIVES: " + lives;
+            // WRONG ANSWER
+            lives--;
+            document.getElementById("lives").innerHTML = "LIVES: " + lives;
 
           // IF YOU LOSE
           if(lives == 0){
+            $('#footer').hide();
             $('#main').animateCss('hinge', function () {
-              $('#main').hide();
-              $('#playagain').animateCss('zoomInRight');
-              $('#playagain').show();
+            $('#main').hide();
+            document.getElementById("postscore").innerHTML = "SCORE: " + score;
+            $('#postscore').animateCss('zoomInLeft');
+            $('#postscore').show();
+            $('#playagain').animateCss('zoomInRight');
+            $('#playagain').show();
             });
           }
         $('#main').animateCss('shake', function () {

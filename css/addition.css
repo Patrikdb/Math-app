@@ -8,13 +8,18 @@ body{
 #main{
   max-width: 1000px;
   margin: 0 auto;
+
+}
+.container-fluid{
+width: 100%;
+
 }
 .jumbotron{
   background: #42f468;
   margin-top: 2em;
   min-height: 800px;
   font-family: 'Oswald', sans-serif;
-
+  z-index: 5;
 }
 
 #score{
@@ -46,15 +51,23 @@ body{
 #playagain{
     font-size: 50px;
     padding: 20px;
-    margin: 6em auto 0 auto;
+    margin: 1em auto 0 auto;
     max-width: 500px;
 }
 
+#postscore{
+  margin-top: 3em;
+  color:#fff;
+  font-size: 75px;
+}
 
+#footer{
+  z-index: 0;
 
+}
 .contact-item{
   padding:5px;
-  background:#222;
+  position: absolute;
 }
 .fa-5x{
   margin:0.2em 0.6em 0em 0.6em;
@@ -73,5 +86,9 @@ a:hover{
   #question{
     font-size: 100px;
     color: #fff;
+  }
+  .jumbotron{
+    margin-left: -1em!important;
+    margin-right: -1em!important;
   }
 }

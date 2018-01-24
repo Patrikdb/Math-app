@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #222;
+  font-family: 'Oswald', sans-serif;
+}
+
+#main{
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+.container-fluid{
+width: 100%;
+
+}
+.jumbotron{
+  background: #42f468;
+  margin-top: 2em;
+  min-height: 800px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#score{
+  float: left;
+}
+
+#lives{
+  float: right;
+
+}
+#content{
+  background: #42f468;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+  margin: 7em auto 0 auto;
+}
+#question{
+  font-size: 200px;
+  color: #fff;
+}
+
+#answer, #submit{
+  margin-top:50px;
+  font-size: 30px;
+}
+
+#playagain{
+    font-size: 50px;
+    padding: 20px;
+    margin: 6em auto 0 auto;
+    max-width: 500px;
+}
+
+
+
+.contact-item{
+  padding:5px;
+  background:#222;
+}
+.fa-5x{
+  margin:0.2em 0.6em 0em 0.6em;
+}
+a{
+  text-decoration: none;
+  color:#333;
+}
+a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+
+@media (max-width: 560px) {
+  #question{
+    font-size: 100px;
+    color: #fff;
+  }
+  .jumbotron{
+    margin-left: -1em!important;
+    margin-right: -1em!important;
+  }
+}
