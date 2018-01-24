@@ -13,8 +13,9 @@
 </head>
 <body onload="getQStart()">
 
-  <div class="container-fluid">
+  <div class="container-fluid animated slideInDown">
     <div id="main" class="jumbotron text-center">
+      <a href="index.html"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
       <h2><div id="score">SCORE: 0</div></h2>
       <h2><div id="lives">LIVES: 5</div></h2>
 
@@ -27,27 +28,26 @@
   </div>
   </div>
 </div>
-
+<div class="container text-center">
+<h1 id="postscore"></h1></div>
 <div class="container text-center"id="btn-container">
+
 <button href="#" class="btn btn-danger" type="button" id="playagain" onClick="window.location.reload()">Play again?</button>
 </div>
 
-
 <div id="footer" class="container-fluid text-center">
-
     <div class="row">
-
     <div class="col-sm-12 contact-item">
       <p><a href="https://github.com/Patrikdb" target="_blank"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a><a href="https://www.upwork.com/o/profiles/users/_~01ce836e826c28b9ec/" target="_blank"><i class="fa fa-id-card fa-5x" aria-hidden="true"></i></a></p>
-
   </div>
   </div>
 </div>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/subtraction.js"></script>
   </body>
 </html>

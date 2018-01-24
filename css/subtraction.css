@@ -4,7 +4,13 @@ body{
   background: #222;
   font-family: 'Oswald', sans-serif;
 }
-
+.fa-2x{
+  float:left;
+color: #fff;
+font-size: 10px;
+margin-top: -40px;
+margin-left: -40px;
+}
 #main{
   max-width: 1000px;
   margin: 0 auto;
@@ -15,10 +21,11 @@ width: 100%;
 
 }
 .jumbotron{
-  background: #42f468;
+  background: #f44141;
   margin-top: 2em;
   min-height: 800px;
   font-family: 'Oswald', sans-serif;
+  z-index: 5;
 }
 
 #score{
@@ -30,7 +37,7 @@ width: 100%;
 
 }
 #content{
-  background: #42f468;
+  background: #f44141;
   max-width: 800px;
   padding: 20px;
   border: 1px solid #f4f4f4;
@@ -46,19 +53,30 @@ width: 100%;
   margin-top:50px;
   font-size: 30px;
 }
-
+#submit{
+  font-size: 50px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 50px;
+}
 #playagain{
     font-size: 50px;
     padding: 20px;
-    margin: 6em auto 0 auto;
+    margin: 1em auto 0 auto;
     max-width: 500px;
 }
 
+#postscore{
+  margin-top: 3em;
+  color:#fff;
+  font-size: 75px;
+}
 
+#footer{
+  z-index: 0;
 
+}
 .contact-item{
   padding:5px;
-  background:#222;
 }
 .fa-5x{
   margin:0.2em 0.6em 0em 0.6em;
@@ -72,8 +90,7 @@ a:hover{
   color:#fff;
 }
 
-
-@media (max-width: 560px) {
+@media (max-width: 770px) {
   #question{
     font-size: 100px;
     color: #fff;
@@ -81,5 +98,12 @@ a:hover{
   .jumbotron{
     margin-left: -1em!important;
     margin-right: -1em!important;
+  }
+  .fa-2x{
+    float:none;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 0;
+  margin-left: 0;
   }
 }

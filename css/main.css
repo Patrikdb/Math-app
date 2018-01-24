@@ -4,7 +4,9 @@ body{
   background: #222;
   font-family: 'Oswald', sans-serif;
 }
-
+h1{
+font-family: 'Acme', sans-serif;
+}
 #main{
   max-width: 1000px;
   margin: 0 auto;
@@ -20,7 +22,9 @@ width: 100%;
   min-height: 800px;
   font-family: 'Oswald', sans-serif;
 }
-
+#mathq{
+  margin-top: -15px;
+}
 h3{
   font-style: oblique;
   font-family: monospace;
